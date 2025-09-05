@@ -1,0 +1,99 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctneoatm3et31"]
+
+[sub_resource type="Theme" id="Theme_3ghou"]
+
+[sub_resource type="Theme" id="Theme_ki15f"]
+
+[node name="Inventory" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Bar" type="GridContainer" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_3ghou")
+columns = 5
+
+[node name="Button" type="Button" parent="Bar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Bar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="Bar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="Bar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="Bar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="BagGrid" type="GridContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+columns = 2
+
+[node name="Bag" type="VBoxContainer" parent="BagGrid"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BagGrid/Bag"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BagGrid/Bag/HBoxContainer"]
+layout_mode = 2
+text = "Inventory"
+
+[node name="Button" type="Button" parent="BagGrid/Bag/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "X"
+
+[node name="GridContainer" type="GridContainer" parent="BagGrid/Bag"]
+layout_mode = 2
+theme = SubResource("Theme_ki15f")
+columns = 3
+
+[node name="Button6" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button12" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Button13" type="Button" parent="BagGrid/Bag/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
